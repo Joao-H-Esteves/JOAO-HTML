@@ -1,0 +1,29 @@
+body{
+    background: rgb(174, 174, 231);
+    font: bold 20pt Arial;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507); /*SOMBREAMENTO NO TEXTO*/
+
+}
+header{
+    color: white;
+    text-align: center; /*ALINHAR O TEXTO NO CENTRO*/
+
+}
+section{
+    background: white;
+    border-radius: 10px; /* para fazer as pontas arredondadas*/
+    padding: 15px; 
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 8px #00000073 ;
+}
+footer{
+    color: white;
+    text-align: center;
+    
+}
+div{
+    text-align: center; /*para alinhar ao centro ,tudo desde as fotos quanto o texto*/ 
+    font-size: 20pt;
+    padding: 8px;
+}

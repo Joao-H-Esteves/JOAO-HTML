@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-Segure Ctrl e clique no nome do arquivo ".css" que o Visual Studio cria automaticamente o arquivo.->
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div>
+    <p>Ano de Nacimento
+            <input type="number" name="txtano" id="txtano" min="1">
+    </p>
+    <p>Sexo:
+    <!-Para criar caixa de seleção (bolinha na frente). O "name" tem que ser igual, para o codigo entender que faz prte da mesma seleção, CASO CONTRARIO IRÁ DAR ERRO. checked = aparecer ja selecionada ->
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc" >Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+    </p>
+    <p>
+            <input type="button" value=" Verificar " onclick="verific()">
+            <!- A chamada da função sempre fica amarrada ao botão->
+    </p>
+        </div>
+        <div id="res">
+Preencha os dados acima para ver o resultado.
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Curso em Video</p>
+    </footer>
+
+<script src="script.js">
+    //Segure Ctrl e clique no nome do arquivo ".js" que o Visual Studio cria automaticamente o arquivo.
+</script>
+</body>
+</html>
+
+<!- NESSE CODIGO USAMOS:
+
+input de radio (bolinha na frente da caixa), com duas opçoes 'label'
+
+onclick no botão Verificador
+
+data.getFullYear == Para pegar apenas o ano com 4 digitos
+
+value.length == pegar o valor da caixa e a quantidade de digitos
+
+getElementsByName('radsex') == para pegar a seleção da caixa RADIO
+
+createElement('img') == Criar uma tag pelo javascript
+
+setAttribute('id', 'foto') == dar um id ao elemento criado
+
+if , else if e else == varias Condições aninhadas
+
+if (fsex[0].checked) condiçoes com elemento byName [0] e [1]
+
+img.setAttribute('src','crianca_peq_masc.png') == introduzindo as imagens direto 
+
+operadores de atribuição ( maior menor e =)
+
+operadores de lógico ( &&)
+
+operadores ARITMÉTICOS ( +,-)
+
+->
+
