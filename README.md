@@ -1,4 +1,4 @@
-## Portfólio de Projetos - João Henrique
+## Portifólio de Projetos - João Henrique
 
 ### Sobre
 
