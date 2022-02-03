@@ -5,7 +5,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-header {
+header {  
   width: 100%;
   padding: 30px;
   display: flex;
@@ -23,6 +23,7 @@ header a {
   color: #2b7e8dd0;
   font-size: 25px;
   font-weight: 500;
+  
 }
 
 header a:hover {
@@ -65,6 +66,7 @@ text-align: center;
 .hero-text p {
   font-size: 25px;
   color: #4598b6;
+  display: flex;
 }
 
 .hero a {
@@ -78,6 +80,7 @@ text-align: center;
   padding: 15px;
   margin:10px;
   border-radius: 5px;
+  display: flex;
 }
 
 .hero a:hover {
@@ -85,7 +88,9 @@ text-align: center;
   transition: 0.5s;
   color:#4598b6;
 }
-
+#sobre{
+  display: flex;
+}
 .conteiner-1 {
   background-color: #d8d6d6f6;
   color:#454758;
