@@ -194,30 +194,6 @@ text-align: center;
 
 }
 
-.certific_cont-2{
-  display: flex;
- flex-direction: column;   
-  width: 250px; 
-  background-color: white;   
-  opacity: 0.6;
-  border-radius: 10px;
-  padding: 10px; 
- }
- .certific_cont-2 a{
-  color: #2d2e3a;
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  
- }
-
-.certific_cont-2 a:hover {
-  transform: scale(1.2);
-  transition: 0.5s;
-  color:#c52d2d;
-  font-weight: 600;
-}
-
 .project {
   display: flex;
   flex-direction: column;
@@ -249,17 +225,20 @@ footer h3 {
 
 footer a {
   font-size: 25px;
-  color: #c52d2d;
+  color: #164047;
   opacity: 0.8;
   text-decoration: none;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px 15px;
+  margin: 0px 10px;
+  background-color: #d8d6d6f6;
+  border-radius: 10px;
   
 }
 
 footer a:hover {
   transform: scale(1.5);
   transition: 0.5s;
-  color: #075577;
+  color: #c52d2d;
   font-weight: 600;
 }
