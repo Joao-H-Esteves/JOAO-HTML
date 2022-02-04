@@ -179,7 +179,7 @@ text-align: center;
 
 .project a {
   text-decoration: none;
-  color: #2d2e3a;
+  color: #eeeeee;
   font-size: 20px;
   margin: 20px;
   width: 700px;
@@ -190,13 +190,14 @@ text-align: center;
   color: #164047;
   font-weight: 600;
   transition: 0.5s;
+  transform: scale(1.0);
 
 }
 
 .certific_cont-2{
   display: flex;
  flex-direction: column;   
-  width: 50%; 
+  width: 250px; 
   background-color: white;   
   opacity: 0.6;
   border-radius: 10px;
