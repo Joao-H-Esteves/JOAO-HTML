@@ -1,3 +1,10 @@
+:root {
+  /* CRIANDO VARIAVEIS GLOBAIS */
+--letter_color: #2b7e8dd0;
+--letter_color_soft:#4598b6 ;
+--hero_color_blue: #164047;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +12,14 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+html{
+  /* padronizar a responsividade */
+  font-size: 62.5%;
+}
+
 header {  
   width: 100%;
-  padding: 30px;
+  padding: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,23 +31,23 @@ header a {
   opacity: 0.8;
   text-decoration: none;
   cursor: pointer;
-  padding: 0 30px;
-  color: #2b7e8dd0;
-  font-size: 25px;
+  padding: 0 3rem;
+  color: var(--letter_color); 
+  font-size: 2.5rem;
   font-weight: 500;
   
 }
 
 header a:hover {
   transition: 0.5s;
-  color: #164047;
+  color: var(--hero_color_blue);
 }
 
 .hero {
 background-image: url(images/fundo.jpg);
 opacity: 0.9;
 background-size: cover;
-height: 50%;
+min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -49,44 +61,44 @@ text-align: center;
   align-items: center;
   align-content: center;
   background-color: white;
-  color: #164047;
+  color: var(--hero_color_blue);
   opacity: 0.6;
-  padding: 50px;
-  border-radius: 10px;
-  margin: 10% 10% 3% 10%;
+  padding: 5rem;
+  border-radius: 1rem;
+   margin: 10% 10% 3% 10%;  /* mudar */
 }
 
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-family: 'Oswald', sans-serif;
 }
 
 .hero-text p {
-  font-size: 25px;
-  color: #4598b6;
+  font-size: 2.5rem;
+  color: var(--letter_color_soft);  
   display: flex;
 }
 
 .hero a {
   background-color: white;
-  color: #164047;
-  font-size: 20px;
+  color: var(--hero_color_blue);
+  font-size: 2rem;
   font-weight: 600;
   opacity: 0.6;
   text-decoration: none;
   cursor: pointer;
-  padding: 15px;
-  margin:10px;
-  border-radius: 5px;
+  padding: 1.5rem;
+  margin:1rem;
+  border-radius: 0.5rem;
   display: flex;
 }
 
 .hero a:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  color:#4598b6;
+  color:var(--letter_color_soft);
 }
 
 .conteiner-1 {
@@ -150,7 +162,7 @@ text-align: center;
 }
 
 .conteiner-3 h2 {
-  color: #2b7e8dd0;
+  color: var(--letter_color);
   font-size: 25px;
   margin: 20px
 }
