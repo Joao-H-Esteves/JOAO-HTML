@@ -77,7 +77,9 @@ header a {
 header a:hover {
   transition: 0.5s;
   color: var(--hero_color_blue);
+  transform: scale(1.2);
 }
+
 
 .hero {
 background-image: url(images/fundo.jpg);
@@ -89,6 +91,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+
 }
 
 .hero-text {
@@ -140,6 +143,7 @@ text-align: center;
   display: flex;
   justify-content:space-between;
   padding: 5rem;
+  z-index: 2;
 }
 
 .conteiner-1 h3 {
@@ -242,31 +246,31 @@ footer {
   flex-direction: column;
   align-items: center;
   align-content: space-around;
-  background-color:var(--hero_color_blue);
-  color: var(--container_gray);
+  background-color:var(--container_gray);
+  color: var(--letter_color_dark_gray);
   font-family: 'Roboto', sans-serif;
 }
 
 footer h2 {
-  padding: 20px;
+  padding: 2rem;
   font-weight: 600;
 }
 
 footer h3 {
-  width: 100%;
-  padding: 20px;
+  width: 100vw;
+  padding: 2rem;
   font-weight: 300;
   text-align: center;
 }
 
-footer a {
-  color: var(--hero_color_blue);
+footer a , .back{
+  color: var(--container_gray);
   opacity: 0.8;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 15px;
   margin: 0px 10px;
-  background-color: var(--container_gray);
+  background-color: var(--hero_color_blue);
   border-radius: 10px;
   
 }
@@ -285,18 +289,25 @@ footer a {
   color: var(--container_gray);
 }
 
-footer a:hover {
-  transform: scale(1.5);
+footer a:hover , .back:hover {
+  transform: scale(1.2);
   transition: 0.5s;
   color: var(--letter_houver-red);
   font-weight: 600;
+}
+/* FIXED BACK BUTTON */
+.back{
+  position: fixed;
+  bottom: 2%; right: 2%;  
+  border: 2px solid gray ;
+  z-index: 1;
 }
 
 /* MEDIA QUERIES */
 
 @media all and (max-width: 940px){
 
-  .conteiner-1   {
+  .conteiner-1  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,21 +317,21 @@ footer a:hover {
   }
 }
 @media all and (max-width: 660px){
-   footer a , #certifc  {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header nav{
-    width: 30%;
-    justify-content: center;
-  }
-  header nav li{
-    /* height: 4rem; */
-    margin: 2.5rem 1rem;    
-  }
-  header nav a{
-    font-size: 2.7rem;
-  }
+    footer a , #certifc  {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header nav{
+      width: 30%;
+      justify-content: center;
+    }
+    header nav li{
+    
+      margin: 2.5rem 1rem;    
+    }
+    header nav a{
+      font-size: 2.7rem;
+    }
 }
