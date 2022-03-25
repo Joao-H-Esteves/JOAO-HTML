@@ -38,7 +38,7 @@ li{
 
 /* STYLE */
 
-header,  footer {  
+header {  
   
   width: 100vw;
   padding: 3rem;
@@ -138,18 +138,15 @@ text-align: center;
   padding: 5rem;
   z-index: 2;
 }
-
 .conteiner-1 h3 {
   color: var(--letter_color_dark_blue);
     margin:2rem
 }
-
 .conteiner-1 p {
   font-size: 2rem;
   margin:2rem;
   width: 70vw;
 }
-
 #picture {
   width: auto;
   height: 25rem;
@@ -167,12 +164,10 @@ text-align: center;
   justify-content:flex-start;
   padding: 5rem;
 }
-
 .conteiner-2 h2 {
   color: var(--container_white);  
   margin:2rem
 }
-
 .conteiner-2 li , .conteiner-3 li{
   margin:2rem;
   width: auto;
@@ -186,7 +181,6 @@ text-align: center;
   justify-content:flex-start;
   padding: 5rem;
 }
-
 .conteiner-3 h2 {
   color: var(--letter_color_dark_blue);
   margin:2rem
@@ -200,7 +194,6 @@ text-align: center;
   justify-content:flex-start;
   padding: 50px;
 }
-
 .conteiner-4 h2 {
   color: var(--container_white);
   margin:2rem
@@ -212,15 +205,12 @@ text-align: center;
   margin:2rem;
   width: auto;
 }
-
 .project a:hover {
   color: var(--letter_houver-red);
   font-weight: 600;
   transition: 0.5s;
   transform: scale(1.0);
-
 }
-
 .project {
   display: flex;
   flex-direction: column;
@@ -231,47 +221,43 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: space-around;
+  align-content: center;
   background-color:var(--container_gray);
   color: var(--letter_color_dark_gray);
   font-family: 'Roboto', sans-serif;
 }
-
 footer h2 {
   padding: 2rem;
   font-weight: 600;
 }
-
 footer h3 {
   width: 100vw;
   padding: 2rem;
   font-weight: 300;
   text-align: center;
 }
-
 footer a , .back{
   color: var(--container_gray);
   opacity: 0.8;
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 5px 15px;
-  margin: 0px 10px;
+  margin: 10px;
   background-color: var(--hero_color_blue);
   border-radius: 10px;
-  
+  overflow-y: hidden;
 }
 
-#certifc{
+#certifc{ /* botao certificados */
   color: var(--letter_houver-red);
   display: block;
   margin-bottom: 30px;
   text-align: center;
+  align-items: center;
   cursor: pointer;
-  width: 200px;
-  margin: auto;
+  /* width: 200px; */
+  margin:  2rem;
 }
-.footer_button_princ{
-  display: block;
-}
+
 
 #certifc a:hover{
   color: var(--container_gray);
@@ -283,6 +269,7 @@ footer a:hover , .back:hover {
   color: var(--letter_houver-red);
   font-weight: 600;
 }
+
 /* FIXED BACK BUTTON */
 .back{
   position: fixed;
@@ -301,7 +288,8 @@ footer a:hover , .back:hover {
     align-items: center;
   }
   header nav a{
-    padding: 1.3rem;
+    padding:3rem 1.9rem;
+    overflow-y: hidden;
   }
 }
 @media all and (max-width: 660px){
@@ -312,7 +300,7 @@ footer a:hover , .back:hover {
       align-items: center;
     }
     header nav{
-      width: 30%;
+      width: 50%;
       justify-content: center;
     }
     header nav li{
