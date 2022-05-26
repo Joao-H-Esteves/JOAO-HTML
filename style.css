@@ -217,7 +217,12 @@ text-align: center;
   justify-content: start;
 }
 
-footer {
+div #rodape-botoes-filhos, #footer_button_princ{
+justify-content: center;
+align-items: center;
+}
+
+footer, .rodape-botoes-pai {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,6 +230,7 @@ footer {
   background-color:var(--container_gray);
   color: var(--letter_color_dark_gray);
   font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 footer h2 {
   padding: 2rem;
@@ -247,13 +253,14 @@ footer a , .back{
   overflow-y: hidden;
 }
 
-#certifc{ /* botao certificados */
+.certifc{ /* botao certificados */
   color: var(--letter_houver-red);
   display: block;
+  margin: 0 auto;
   margin-bottom: 30px;
-  text-align: center;
+  /* text-align: right; */
   align-items: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* width: 200px; */
   margin:  2rem;
 }
