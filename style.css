@@ -32,7 +32,7 @@ h2 , h3 , a , p{
 li{
   font-size: 2rem;
   list-style: none;
-  
+  overflow: hidden;
 }
 
 
@@ -49,14 +49,14 @@ header {
   background-color: var(--container_white);
   
 }
- header ul , footer ul{
+ header ul {
  display: block;
 max-width: 90vw;
 }
 header li , footer li{
   float: left;
   margin:  auto;
-  display: block;  
+  /* display: block;   */
 }
 
 header a {
@@ -222,7 +222,12 @@ justify-content: center;
 align-items: center;
 }
 
-footer, .rodape-botoes-pai {
+#footer-tres-botoes , #footer-tres-botoes li{
+  float: left;
+  height: 5rem;
+}
+
+footer, .rodape-botoes-pai, #footer_button_princ {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,10 +263,7 @@ footer a , .back{
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  /* text-align: right; */
   align-items: center;
-  /* cursor: pointer; */
-  /* width: 200px; */
   margin:  2rem;
 }
 
