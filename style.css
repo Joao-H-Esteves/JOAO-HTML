@@ -34,6 +34,9 @@ li{
   list-style: none;
   overflow: hidden;
 }
+p{
+  text-indent: 8px;
+}
 
 
 /* STYLE */
