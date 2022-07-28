@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Modelo</title>
+</head>
+
+<body>
+    <section class="container borda">
+        <div class="center">
+            <div class=" header">
+                <h1> 🖩 Calculadora 🖩 </h1>
+            </div>
+
+
+            <table class="teclado">
+                <form class="grid">
+                    <table>
+                        <tr>
+                            <td colspan="4" >
+                                <input type="text" class="result borda">
+                                <!-- aqui vai o resultado (usando o result)-->
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><button class="btnfunc btnClear " id="botao_01"> C </button></td>
+                            <td><button class="btnGeneric btnOpen" id="botao_02"> ( </button></td>
+                            <td><button class="btnGeneric btnClose" id="botao_03"> ) </button></td>
+                            <td><button class="btnGeneric btnDivid" id="botao_04"> / </button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button class="btnGeneric btnNum" id="botao_05"> 7</button></td>
+                            <td><button class="btnGeneric btnNum" id="botao_06"> 8</button></td>
+                            <td> <button class="btnGeneric btnNum" id="botao_07"> 9</button></td>
+                            <td> <button class="btnGeneric btnMult" id="botao_08"> *</button></td>
+                        </tr>
+
+                        <tr>
+                            <td> <button class="btnGeneric btnNum" id="botao_09"> 4 </button></td>
+                            <td> <button class="btnGeneric btnNum" id="botao_010"> 5 </button></td>
+                            <td><button class="btnGeneric btnNum" id="botao_011"> 6 </button></td>
+                            <td> <button class="btnGeneric btnSoma" id="botao_012"> + </button></td>
+                        </tr>
+                       
+                        <tr>
+                            <td> <button class="btnGeneric btnNum" id="botao_013"> 1</button></td>
+                            <td> <button class="btnGeneric btnNum" id="botao_014"> 2</button></td>
+                            <td><button class="btnGeneric btnNum" id="botao_015"> 3</button></td>
+                            <td><button class="btnGeneric btnSub" id="botao_016"> - </button></td>
+                        </tr>
+
+                        <tr>
+                            <td> <button class="btnGeneric btnPoint" id="botao_017"> .</button></td>
+                            <td> <button class="btnGeneric btnNum" id="botao_018"> 0</button></td>
+                            <td><button class="btnfunc btnDel" id="botao_019"> &laquo;</button></td>
+                            <td><button class="btnfunc btnIgual" id="botao_020"> = </button></td>
+                        </tr>
+                    </table>
+                </form>
+            </table>
+        </div>
+    </section>
+
+
+
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
